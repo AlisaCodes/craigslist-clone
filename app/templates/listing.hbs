@@ -3,5 +3,6 @@
 <h3>{{model.name}}</h3>
 <h5>Description: {{model.description}}</h5>
 <h5>Location: {{model.location}}</h5>
+<h5>Date Added: {{current-date model.date_added}}</h5>
 
 {{#link-to 'category' model.category}}<p>Back</p>{{/link-to}}
