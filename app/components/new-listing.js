@@ -12,7 +12,8 @@ export default Ember.Component.extend({
       var params  = {
         name: this.get('name'),
         description: this.get('description'),
-        location: this.get('location')
+        location: this.get('location'),
+        category: this.get('category')
       }
 
       this.sendAction('saveListing', params),

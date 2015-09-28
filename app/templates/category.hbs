@@ -1,1 +1,7 @@
 {{outlet}}
+
+{{#each model.listings as |listing|}}
+  <h4>{{listing.name}}</h4>
+{{/each}}
+
+{{new-listing category=model saveListing='saveListing'}}
