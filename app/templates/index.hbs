@@ -3,5 +3,8 @@
 <div class="container">
   {{#each model as |section|}}
     {{#link-to 'section' section.id}}<h3>{{section.heading}}</h3>{{/link-to}}
+    {{#each section.categories as |category|}}
+      <h5>{{category.title}}</h5>
+    {{/each}}
   {{/each}}
 </div>

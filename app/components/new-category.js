@@ -11,11 +11,13 @@ export default Ember.Component.extend({
     saveCategory() {
       var params  = {
         title: this.get('title'),
-        section: this.get('section')
+        section: this.get('section'),
+        listings: []
       }
 
       this.sendAction('saveCategory', params),
       this.set('addCategory', false);
+
     }
   }
 });
