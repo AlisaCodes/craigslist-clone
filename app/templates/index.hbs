@@ -1,42 +1,7 @@
 {{outlet}}
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <h3>Doing Stuff</h3>
-      {{#link-to 'party'}}<h5>party</h5>{{/link-to}}
-      {{#link-to 'happy-hour'}}<h5>happy hour</h5>{{/link-to}}
-    </div>
-    <div class="col-md-6">
-      <h3>Housing</h3>
-      {{#link-to 'living-with-me'}}<h5>live with me</h5>{{/link-to}}
-      {{#link-to 'living-with-you'}}<h5>live with you</h5>{{/link-to}}
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <h3>Buy my Stuff</h3>
-      {{#link-to 'indoor-things'}}<h5>indoor things</h5>{{/link-to}}
-      {{#link-to 'outdoor-things'}}<h5>outdoor things</h5>{{/link-to}}
-    </div>
-    <div class="col-md-6">
-      <h3>Jobs for Beer</h3>
-      {{#link-to 'use-your-body'}}<h5>use your body</h5>{{/link-to}}
-      {{#link-to 'use-your-mind'}}<h5>use your mind</h5>{{/link-to}}
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <h3>Rantz</h3>
-      {{#link-to 'relationship-shit'}}<h5>relationship shit</h5>{{/link-to}}
-      {{#link-to 'political-shit'}}<h5>political shit</h5>{{/link-to}}
-    </div>
-    <div class="col-md-6">
-      <h3>Will do For Beer</h3>
-      {{#link-to 'use-my-body'}}<h5>use my body</h5>{{/link-to}}
-      {{#link-to 'use-my-mind'}}<h5>use my mind</h5>{{/link-to}}
-    </div>
-  </div>
+  {{#each model as |section|}}
+    {{#link-to 'section' section.id}}<h3>{{section.heading}}</h3>{{/link-to}}
+  {{/each}}
 </div>

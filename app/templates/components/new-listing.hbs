@@ -1,0 +1,24 @@
+{{yield}}
+
+{{#if addListing}}
+  <div>
+    <form>
+      <h3>Add A New Listing</h3>
+      <div class="form-group">
+        {{input value=name id="name" class="form-control" placeholder="Name of Listing"}}
+      </div>
+
+      <div class="form-group">
+        {{input value=description id="description" class="form-control" placeholder="Description"}}
+      </div>
+
+      <div class="form-group">
+        {{input value=location id="location" class="form-control" placeholder="Location"}}
+      </div>
+
+      <button {{action "saveListing"}} class="btn btn-default">Add Listing</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'listingFormShow'}} class="btn btn-default">Click to Add a Listing</button>
+{{/if}}

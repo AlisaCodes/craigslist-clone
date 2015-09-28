@@ -1,26 +1,14 @@
-{"categories": [{
-  "title": "party"
-  }, {
-  "title": "happy hour"
-  }, {
-  "title": "live with me"
+{"sections": [{
+  "heading": "Doing Stuff"
 }, {
-  "title": "live with you"
-}, {
-  "title": "indoor things"
-}, {
-  "title": "outdoor things"
-}, {
-  "title": "use your body"
-}, {
-  "title": "use your mind"
-}, {
-  "title": "relationship shit"
-}, {
-  "title": "political shit"
-}, {
-  "title": "use my body"
-}, {
-  "title": "use my mind"
-  }
+  "heading": "Housing"
+},{
+  "heading": "Buy my Stuff"
+},{
+  "heading": "Jobs for Beer"
+},{
+  "heading": "Rantz"
+},{
+  "heading": "Will do for Beer"
+}
 ]}
