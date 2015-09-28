@@ -1,3 +1,21 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Uh-Lis-Uh's List</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">Rules & Regs</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<body>
+  <div class="container">
+    {{outlet}}
+  </div>
+</body>
