@@ -1,0 +1,7 @@
+{{yield}}
+<form class="navbar-form navbar-right" role="search">
+  <div class="form-group">
+    {{input value=searchingFor id="searchingFor" type="text" class="form-control" placeholder="Search"}}
+  </div>
+  <button type="submit" {{action 'searching'}} class="btn btn-default">Submit</button>
+</form>

@@ -1,0 +1,8 @@
+{{outlet}}
+
+<ul>
+  <h3>Results:</h3>
+  {{#each model as |result|}}
+    <li>{{#link-to 'listing' result.id}}{{result.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
